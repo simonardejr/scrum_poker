@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32C394634C40148C7AED19D4 /* Pods_scrumpoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570FFE2FE60022E268389341 /* Pods_scrumpoker.framework */; };
+		A722D08B273170B200E2CA35 /* Sprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D08A273170B200E2CA35 /* Sprint.swift */; };
+		A722D08D2731710000E2CA35 /* SprintClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D08C2731710000E2CA35 /* SprintClient.swift */; };
+		A722D08F2731743B00E2CA35 /* SprintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D08E2731743B00E2CA35 /* SprintInteractor.swift */; };
+		A722D0912731785100E2CA35 /* SprintPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0902731785100E2CA35 /* SprintPresenter.swift */; };
+		A722D0972731892B00E2CA35 /* SprintRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0962731892B00E2CA35 /* SprintRouter.swift */; };
+		A722D0A22731BFBA00E2CA35 /* SprintTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */; };
+		A722D0A32731BFBA00E2CA35 /* SprintTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */; };
+		A722D0AD273202B700E2CA35 /* SprintDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0AC273202B700E2CA35 /* SprintDetailRouter.swift */; };
+		A722D0B0273202EC00E2CA35 /* SprintDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */; };
+		A722D0B1273202EC00E2CA35 /* SprintDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */; };
+		A7903B7627316BB600C1E8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7903B7527316BB600C1E8B4 /* AppDelegate.swift */; };
+		A7903B7F27316BB700C1E8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7903B7E27316BB700C1E8B4 /* Assets.xcassets */; };
+		A7903B8227316BB700C1E8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7903B8027316BB700C1E8B4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21789EBD50B796D11322F662 /* Pods-scrumpoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrumpoker.release.xcconfig"; path = "Target Support Files/Pods-scrumpoker/Pods-scrumpoker.release.xcconfig"; sourceTree = "<group>"; };
+		570FFE2FE60022E268389341 /* Pods_scrumpoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrumpoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A57C3D255414FE787FEA7B /* Pods-scrumpoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrumpoker.debug.xcconfig"; path = "Target Support Files/Pods-scrumpoker/Pods-scrumpoker.debug.xcconfig"; sourceTree = "<group>"; };
+		A722D08A273170B200E2CA35 /* Sprint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint.swift; sourceTree = "<group>"; };
+		A722D08C2731710000E2CA35 /* SprintClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintClient.swift; sourceTree = "<group>"; };
+		A722D08E2731743B00E2CA35 /* SprintInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintInteractor.swift; sourceTree = "<group>"; };
+		A722D0902731785100E2CA35 /* SprintPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintPresenter.swift; sourceTree = "<group>"; };
+		A722D0962731892B00E2CA35 /* SprintRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintRouter.swift; sourceTree = "<group>"; };
+		A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintTableViewController.swift; sourceTree = "<group>"; };
+		A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintTableViewController.xib; sourceTree = "<group>"; };
+		A722D0AC273202B700E2CA35 /* SprintDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailRouter.swift; sourceTree = "<group>"; };
+		A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailViewController.swift; sourceTree = "<group>"; };
+		A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintDetailViewController.xib; sourceTree = "<group>"; };
+		A7903B7227316BB600C1E8B4 /* scrumpoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumpoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7903B7527316BB600C1E8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7903B7E27316BB700C1E8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7903B8127316BB700C1E8B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7903B8327316BB700C1E8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7903B6F27316BB600C1E8B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32C394634C40148C7AED19D4 /* Pods_scrumpoker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D92035E7BF0B092024CBA4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				570FFE2FE60022E268389341 /* Pods_scrumpoker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A722D08427316F0D00E2CA35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */,
+				A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */,
+				A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */,
+				A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A722D08627316F3800E2CA35 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A722D08E2731743B00E2CA35 /* SprintInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A722D08727316F5000E2CA35 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A722D0902731785100E2CA35 /* SprintPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A722D08827316F6700E2CA35 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A722D08A273170B200E2CA35 /* Sprint.swift */,
+				A722D08C2731710000E2CA35 /* SprintClient.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A722D08927316F7300E2CA35 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A722D0962731892B00E2CA35 /* SprintRouter.swift */,
+				A722D0AC273202B700E2CA35 /* SprintDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A7903B6927316BB600C1E8B4 = {
+			isa = PBXGroup;
+			children = (
+				A7903B7427316BB600C1E8B4 /* scrumpoker */,
+				A7903B7327316BB600C1E8B4 /* Products */,
+				F7F830525D018BF8BC35F0BF /* Pods */,
+				8D92035E7BF0B092024CBA4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7903B7327316BB600C1E8B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7903B7227316BB600C1E8B4 /* scrumpoker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7903B7427316BB600C1E8B4 /* scrumpoker */ = {
+			isa = PBXGroup;
+			children = (
+				A722D08927316F7300E2CA35 /* Router */,
+				A722D08827316F6700E2CA35 /* Entity */,
+				A722D08727316F5000E2CA35 /* Presenter */,
+				A722D08627316F3800E2CA35 /* Interactor */,
+				A722D08427316F0D00E2CA35 /* View */,
+				A7903B7527316BB600C1E8B4 /* AppDelegate.swift */,
+				A7903B7E27316BB700C1E8B4 /* Assets.xcassets */,
+				A7903B8027316BB700C1E8B4 /* LaunchScreen.storyboard */,
+				A7903B8327316BB700C1E8B4 /* Info.plist */,
+			);
+			path = scrumpoker;
+			sourceTree = "<group>";
+		};
+		F7F830525D018BF8BC35F0BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73A57C3D255414FE787FEA7B /* Pods-scrumpoker.debug.xcconfig */,
+				21789EBD50B796D11322F662 /* Pods-scrumpoker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7903B7127316BB600C1E8B4 /* scrumpoker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7903B8627316BB700C1E8B4 /* Build configuration list for PBXNativeTarget "scrumpoker" */;
+			buildPhases = (
+				A840D91BF54CDA25525B11D6 /* [CP] Check Pods Manifest.lock */,
+				A7903B6E27316BB600C1E8B4 /* Sources */,
+				A7903B6F27316BB600C1E8B4 /* Frameworks */,
+				A7903B7027316BB600C1E8B4 /* Resources */,
+				738083860708370B64CD29F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scrumpoker;
+			productName = scrumpoker;
+			productReference = A7903B7227316BB600C1E8B4 /* scrumpoker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7903B6A27316BB600C1E8B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A7903B7127316BB600C1E8B4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = A7903B6D27316BB600C1E8B4 /* Build configuration list for PBXProject "scrumpoker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7903B6927316BB600C1E8B4;
+			productRefGroup = A7903B7327316BB600C1E8B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7903B7127316BB600C1E8B4 /* scrumpoker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7903B7027316BB600C1E8B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A722D0B1273202EC00E2CA35 /* SprintDetailViewController.xib in Resources */,
+				A722D0A32731BFBA00E2CA35 /* SprintTableViewController.xib in Resources */,
+				A7903B8227316BB700C1E8B4 /* LaunchScreen.storyboard in Resources */,
+				A7903B7F27316BB700C1E8B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		738083860708370B64CD29F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrumpoker/Pods-scrumpoker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scrumpoker/Pods-scrumpoker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scrumpoker/Pods-scrumpoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A840D91BF54CDA25525B11D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scrumpoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7903B6E27316BB600C1E8B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A722D08F2731743B00E2CA35 /* SprintInteractor.swift in Sources */,
+				A722D0A22731BFBA00E2CA35 /* SprintTableViewController.swift in Sources */,
+				A722D08D2731710000E2CA35 /* SprintClient.swift in Sources */,
+				A7903B7627316BB600C1E8B4 /* AppDelegate.swift in Sources */,
+				A722D0AD273202B700E2CA35 /* SprintDetailRouter.swift in Sources */,
+				A722D0B0273202EC00E2CA35 /* SprintDetailViewController.swift in Sources */,
+				A722D0912731785100E2CA35 /* SprintPresenter.swift in Sources */,
+				A722D0972731892B00E2CA35 /* SprintRouter.swift in Sources */,
+				A722D08B273170B200E2CA35 /* Sprint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7903B8027316BB700C1E8B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7903B8127316BB700C1E8B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7903B8427316BB700C1E8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7903B8527316BB700C1E8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7903B8727316BB700C1E8B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A57C3D255414FE787FEA7B /* Pods-scrumpoker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = scrumpoker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simonarde.lima.scrumpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7903B8827316BB700C1E8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21789EBD50B796D11322F662 /* Pods-scrumpoker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = scrumpoker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = simonarde.lima.scrumpoker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7903B6D27316BB600C1E8B4 /* Build configuration list for PBXProject "scrumpoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7903B8427316BB700C1E8B4 /* Debug */,
+				A7903B8527316BB700C1E8B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7903B8627316BB700C1E8B4 /* Build configuration list for PBXNativeTarget "scrumpoker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7903B8727316BB700C1E8B4 /* Debug */,
+				A7903B8827316BB700C1E8B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7903B6A27316BB600C1E8B4 /* Project object */;
+}
