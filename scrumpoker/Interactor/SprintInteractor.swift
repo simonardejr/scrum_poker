@@ -19,6 +19,7 @@ protocol SprintInteractorInput: AnyObject {
     func fetchAllSprints()
     func fetchSprint(by id: Int)
     func deleteSprint(by id: Int)
+    func addSprint(sprint: Sprint)
 }
 
 class SprintInteractor {
@@ -57,6 +58,18 @@ extension SprintInteractor: SprintInteractorInput {
         SprintClient.deleteSprint(by: id).subscribe { [weak self] event in
             if event.isCompleted {
                 self?.output?.sprintWasDeleted()
+            }
+            if let error = event.error {
+                self?.output?.errorOccurred(error: error)
+            }
+        }
+        .disposed(by: disposeBag)
+    }
+    
+    func addSprint(sprint: Sprint) {
+        SprintClient.addSprint(sprint: sprint).subscribe { [weak self] event in
+            if event.isCompleted {
+                // 
             }
             if let error = event.error {
                 self?.output?.errorOccurred(error: error)

@@ -9,7 +9,7 @@ import UIKit
 
 class SprintDetailRouter {
 //    let view = SprintViewController(nibName: "SprintViewController", bundle: .main)
-    let view = SprintDetailViewController(nibName: "SprintDetailViewController", bundle: .main)
+    let view = AddSprintViewController(nibName: "SprintDetailViewController", bundle: .main)
     let interactor = SprintInteractor()
     let presenter = SprintPresenter()
     

@@ -23,6 +23,24 @@ class SprintRouter {
     }
     
     func present(on window: UIWindow) {
-        window.rootViewController = view
+        /*
+        //tab bar
+        let tabBar = UITabBarController()
+        
+        view.tabBarItem.image = UIImage(systemName: "gobackward")
+        view.tabBarItem.title = "Sprints"
+        
+        let developersViewController = DeveloperViewController()
+        developersViewController.tabBarItem.image = UIImage(systemName: "person.2.circle")
+        developersViewController.tabBarItem.title = "Developers"
+        
+        tabBar.viewControllers = [view, developersViewController]*/
+        
+        //window.rootViewController = tabBar
+        
+        //navigationcontroller
+        window.rootViewController = UINavigationController(rootViewController: view)
+        
+        //window.rootViewController = view
     }
 }

@@ -16,8 +16,8 @@
 		A722D0A22731BFBA00E2CA35 /* SprintTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */; };
 		A722D0A32731BFBA00E2CA35 /* SprintTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */; };
 		A722D0AD273202B700E2CA35 /* SprintDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0AC273202B700E2CA35 /* SprintDetailRouter.swift */; };
-		A722D0B0273202EC00E2CA35 /* SprintDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */; };
-		A722D0B1273202EC00E2CA35 /* SprintDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */; };
+		A722D0B0273202EC00E2CA35 /* AddSprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A722D0AE273202EC00E2CA35 /* AddSprintViewController.swift */; };
+		A722D0B1273202EC00E2CA35 /* AddSprintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A722D0AF273202EC00E2CA35 /* AddSprintViewController.xib */; };
 		A7903B7627316BB600C1E8B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7903B7527316BB600C1E8B4 /* AppDelegate.swift */; };
 		A7903B7F27316BB700C1E8B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7903B7E27316BB700C1E8B4 /* Assets.xcassets */; };
 		A7903B8227316BB700C1E8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7903B8027316BB700C1E8B4 /* LaunchScreen.storyboard */; };
@@ -35,8 +35,8 @@
 		A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintTableViewController.swift; sourceTree = "<group>"; };
 		A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintTableViewController.xib; sourceTree = "<group>"; };
 		A722D0AC273202B700E2CA35 /* SprintDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailRouter.swift; sourceTree = "<group>"; };
-		A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintDetailViewController.swift; sourceTree = "<group>"; };
-		A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SprintDetailViewController.xib; sourceTree = "<group>"; };
+		A722D0AE273202EC00E2CA35 /* AddSprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSprintViewController.swift; sourceTree = "<group>"; };
+		A722D0AF273202EC00E2CA35 /* AddSprintViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSprintViewController.xib; sourceTree = "<group>"; };
 		A7903B7227316BB600C1E8B4 /* scrumpoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumpoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7903B7527316BB600C1E8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7903B7E27316BB700C1E8B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 			children = (
 				A722D0A02731BFBA00E2CA35 /* SprintTableViewController.swift */,
 				A722D0A12731BFBA00E2CA35 /* SprintTableViewController.xib */,
-				A722D0AE273202EC00E2CA35 /* SprintDetailViewController.swift */,
-				A722D0AF273202EC00E2CA35 /* SprintDetailViewController.xib */,
+				A722D0AE273202EC00E2CA35 /* AddSprintViewController.swift */,
+				A722D0AF273202EC00E2CA35 /* AddSprintViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A722D0B1273202EC00E2CA35 /* SprintDetailViewController.xib in Resources */,
+				A722D0B1273202EC00E2CA35 /* AddSprintViewController.xib in Resources */,
 				A722D0A32731BFBA00E2CA35 /* SprintTableViewController.xib in Resources */,
 				A7903B8227316BB700C1E8B4 /* LaunchScreen.storyboard in Resources */,
 				A7903B7F27316BB700C1E8B4 /* Assets.xcassets in Resources */,
@@ -273,7 +273,7 @@
 				A722D08D2731710000E2CA35 /* SprintClient.swift in Sources */,
 				A7903B7627316BB600C1E8B4 /* AppDelegate.swift in Sources */,
 				A722D0AD273202B700E2CA35 /* SprintDetailRouter.swift in Sources */,
-				A722D0B0273202EC00E2CA35 /* SprintDetailViewController.swift in Sources */,
+				A722D0B0273202EC00E2CA35 /* AddSprintViewController.swift in Sources */,
 				A722D0912731785100E2CA35 /* SprintPresenter.swift in Sources */,
 				A722D0972731892B00E2CA35 /* SprintRouter.swift in Sources */,
 				A722D08B273170B200E2CA35 /* Sprint.swift in Sources */,

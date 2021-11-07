@@ -13,6 +13,8 @@ import RxRelay
 protocol SprintPresenterToView: AnyObject {
     func viewDidLoad()
     func deleteSprint(by id: Int)
+    func addSprint(sprint: Sprint)
+    func fetchAllSprints()
 }
 
 class SprintPresenter {
@@ -25,13 +27,24 @@ class SprintPresenter {
     
     func bind() {
         print("bind Presenter")
-        self.interactor?.fetchAllSprints()
+        //self.interactor?.fetchAllSprints()
+        fetchAllSprints()
     }
 }
 
 extension SprintPresenter: SprintPresenterToView {
     func deleteSprint(by id: Int) {
         self.interactor?.deleteSprint(by: id)
+    }
+    
+    func addSprint(sprint: Sprint) {
+        print("add Sprint Presenter")
+        self.interactor?.addSprint(sprint: sprint)
+        self.interactor?.fetchAllSprints()
+    }
+    
+    func fetchAllSprints() {
+        self.interactor?.fetchAllSprints()
     }
     
     func viewDidLoad() {

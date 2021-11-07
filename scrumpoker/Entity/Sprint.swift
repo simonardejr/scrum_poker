@@ -9,6 +9,6 @@ import Foundation
 
 struct Sprint: Codable {
     let id: Int
-    let nome: String
-    let link: String
+    var nome: String
+    var link: String
 }

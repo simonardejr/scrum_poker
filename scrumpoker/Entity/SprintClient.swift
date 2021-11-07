@@ -27,8 +27,16 @@ struct SprintClient {
     }
     
     static func addSprint(sprint: Sprint) -> Observable<Sprint> {
-        return RxAlamofire.requestDecodable(.post, "\(kBaseURL)/sprint").map { (response, sprint: Sprint) in
-            return sprint
+        print(sprint.nome)
+        let jsonData = try? JSONEncoder().encode(sprint)
+        var request = URLRequest(url: URL(string: "\(kBaseURL)/sprint")!)
+            request.httpBody = jsonData
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return RxAlamofire.request(request).responseJSON().map { (response) in
+            print(response.result)
+            return try response.result.get() as? Sprint ?? sprint
         }
     }
 

@@ -30,8 +30,26 @@ class SprintTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Sprints"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        
         presenter.viewDidLoad()
+        
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.presenter.fetchAllSprints()
+        tableView.reloadData()
+    }
+    
+    @objc private func addTapped() {
+        let addViewController = AddSprintViewController()
+        addViewController.presenter = presenter
+        navigationController?.pushViewController(addViewController, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +69,7 @@ class SprintTableViewController: UITableViewController {
                 if self?.sprints[indexPath.row].id != nil {
                     print(self!.sprints[indexPath.row].id)
                     self?.presenter.deleteSprint(by: self!.sprints[indexPath.row].id)
+                    self?.presenter.fetchAllSprints()
                     completion(true)
                 }
             }
