@@ -37,7 +37,7 @@ class SprintTableViewController: UITableViewController {
         
         presenter.viewDidLoad()
         
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView.register(SubtitleTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +61,8 @@ class SprintTableViewController: UITableViewController {
         let sprint = sprints[indexPath.row]
         cell.textLabel?.text = sprint.nome
         cell.detailTextLabel?.text = sprint.link
+        cell.detailTextLabel?.textColor = .gray
+        
         return cell
     }
     
@@ -97,7 +99,7 @@ class SprintTableViewController: UITableViewController {
 
         present(alert, animated: true)*/
         
-        let alert = UIAlertController(title: "\(sprint.nome)", message: "\(sprint.link)", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "\(sprint.nome)", message: "Id: \(sprint.id) \nLink: \(sprint.link)", preferredStyle: .actionSheet)
             
             alert.addAction(UIAlertAction(title: "Editar", style: .default , handler: { (UIAlertAction) in
                 print("Edit button")
@@ -114,6 +116,17 @@ class SprintTableViewController: UITableViewController {
             self.present(alert, animated: true, completion: {
                 // acao para ser executada quando fechar o popup, indepentende da acao escolhida
             })
+    }
+}
+
+class SubtitleTableViewCell: UITableViewCell {
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .subtitle, reuseIdentifier: "cell")
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
